@@ -1,0 +1,155 @@
+﻿*
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body
+{
+	margin: 0px;
+	font-family:Verdana, Arial, Helv, Helvetica, sans-serif;
+	font-size: 14px;
+	 background-color:White; background-color: #95B8DF;
+	/*background-image: url(   '../Images/left_back.png' ); 	background-repeat: inherit;*/
+	border-right: solid 2px #6B93C7;
+	width: 193px;
+}
+#nav
+{
+	position: absolute;
+	width: 177px;
+	top: 115px;
+	left: 10px;
+	line-height: 24px;
+	padding: 0px; /*定义整个ul菜单的行高和背景色*/
+	border-top: solid 1px #345889;
+	background-color: Transparent;
+	z-index: 1;
+}
+/*==================一级目录===================*/
+#nav ul
+{
+	/*background:#CCC; /*一级目录的背景色*/
+	border-bottom: solid 1px #345889;
+	border-left: solid 1px #345889;
+	border-right: solid 1px #345889; /*background-image: url(   '../Images/parentMenu.png' ); 	background-repeat: inherit;*/
+	float: left; /*float：left,本不应该设置，但由于在Firefox不能正常显示          继承Nav的width,限制宽度，li自动向下延伸*/
+	padding: 0px;
+	color: Black;
+}
+
+#nav ul a
+{
+	width: 175px;
+	display: block;
+	line-height: 24px;
+	font-weight: bold; /*Width(一定要)，否则下面的Li会变形*/
+	background-image: url(     '../Images/pMenu.png' );
+	background-repeat: inherit;
+}
+
+#nav ul a:hover
+{
+	/*background: #8DABD3; 一级目录onMouseOver显示的背景色*/
+	background-image: url(     '../Images/pMenuOver.png' );
+	background-repeat: inherit;
+}
+#nav ul a:link
+{
+	color: #666;
+	text-decoration: none;
+}
+#nav ul a:visited
+{
+	color: #666;
+	text-decoration: none;
+}
+#nav ul a:hover
+{
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+/*==================二级目录===================*/
+#nav ul li
+{
+	/*background: #EBEBEB; /*二级目录的背景色*/ /*background-image: url(   '../Images/childMenu.png' ); /*background-image: url(  '../Images/back.png' );*/ /*background-repeat: inherit;	*/
+	border-top: solid 1px #345889;
+	list-style-type: none;
+}
+#nav ul li a
+{
+	width: 175px;
+	text-align: center;
+	font-weight: normal; /* padding-left二级目录中文字向右移动，但Width必须重新设置=(总宽度-padding-left)*/
+	background-image: url(     '../Images/cMenu.png' );
+	background-repeat: inherit;
+}
+/*下面是二级目录的链接样式*/
+#nav ul li a:link
+{
+	color: #666;
+	text-decoration: none;
+}
+#nav ul li a:visited
+{
+	color: #666;
+	text-decoration: none;
+}
+#nav ul li a:hover
+{
+	color: #FFF;
+	text-decoration: none;
+	font-weight: normal;
+	/*background: #C7D6EB;  二级onmouseover的字体颜色、背景色*/
+	background-image: url(     '../Images/cMenuOver.png' );
+	background-repeat: inherit;
+}
+
+/****************************************/
+#Image1
+{
+	margin-top: 0px;
+	padding-top: 0px;
+}
+#photo
+{
+	margin-top: 5px;
+	margin-left: 3px;
+}
+
+#upload
+{
+	position: absolute;
+	left: 10px;
+	top: 30px;
+	visibility: hidden;
+	width: 177px;
+	height: 90%;
+	border-style: double;
+	border-color: Green;
+	z-index: 2;
+	text-align: center;
+	background-color: #95B8DE;
+}
+
+#update
+{
+	font-size:14px;
+	position: absolute;
+	left: 10px;
+	top: 30px;
+	visibility: hidden;
+	width: 177px;
+	height: 90%;
+	border-style: double;
+	border-color: Green;
+	z-index: 3;
+	text-align: center;
+	background-color: #95B8DE;
+}
+#txtFile2
+{
+	opacity: 0; /*设置它的透明度为0，即完全透明。这个语句，对付除IE以外的浏览器*/
+	filter: alpha(opacity=0); /*设置它的透明度为0，即完全透明。这个语句，对付IE浏览器。*/
+}

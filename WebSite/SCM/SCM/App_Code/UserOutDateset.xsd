@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="UserOutDateset" targetNamespace="http://tempuri.org/UserOutDateset.xsd" xmlns:mstns="http://tempuri.org/UserOutDateset.xsd" xmlns="http://tempuri.org/UserOutDateset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="UserOutDateset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="UserOutDateset" msprop:Generator_DataSetName="UserOutDateset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="UserOutDatetable" msprop:Generator_UserTableName="UserOutDatetable" msprop:Generator_RowDeletedName="UserOutDatetableRowDeleted" msprop:Generator_RowChangedName="UserOutDatetableRowChanged" msprop:Generator_RowClassName="UserOutDatetableRow" msprop:Generator_RowChangingName="UserOutDatetableRowChanging" msprop:Generator_RowEvArgName="UserOutDatetableRowChangeEvent" msprop:Generator_RowEvHandlerName="UserOutDatetableRowChangeEventHandler" msprop:Generator_TableClassName="UserOutDatetableDataTable" msprop:Generator_TableVarName="tableUserOutDatetable" msprop:Generator_RowDeletingName="UserOutDatetableRowDeleting" msprop:Generator_TablePropName="UserOutDatetable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DEPARTUAL_DATE" msprop:Generator_UserColumnName="DEPARTUAL_DATE" msprop:Generator_ColumnPropNameInRow="DEPARTUAL_DATE" msprop:Generator_ColumnVarNameInTable="columnDEPARTUAL_DATE" msprop:Generator_ColumnPropNameInTable="DEPARTUAL_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="QUANTITY" msprop:Generator_UserColumnName="QUANTITY" msprop:Generator_ColumnPropNameInRow="QUANTITY" msprop:Generator_ColumnVarNameInTable="columnQUANTITY" msprop:Generator_ColumnPropNameInTable="QUANTITYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FROM_WAREHOUSE_CODE" msprop:Generator_UserColumnName="FROM_WAREHOUSE_CODE" msprop:Generator_ColumnPropNameInRow="FROM_WAREHOUSE_CODE" msprop:Generator_ColumnVarNameInTable="columnFROM_WAREHOUSE_CODE" msprop:Generator_ColumnPropNameInTable="FROM_WAREHOUSE_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FROM_WAREHOUSE_NAME" msprop:Generator_UserColumnName="FROM_WAREHOUSE_NAME" msprop:Generator_ColumnPropNameInRow="FROM_WAREHOUSE_NAME" msprop:Generator_ColumnVarNameInTable="columnFROM_WAREHOUSE_NAME" msprop:Generator_ColumnPropNameInTable="FROM_WAREHOUSE_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PRODUCT_NAME" msprop:Generator_UserColumnName="PRODUCT_NAME" msprop:Generator_ColumnPropNameInRow="PRODUCT_NAME" msprop:Generator_ColumnVarNameInTable="columnPRODUCT_NAME" msprop:Generator_ColumnPropNameInTable="PRODUCT_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UNIT_NAME" msprop:Generator_UserColumnName="UNIT_NAME" msprop:Generator_ColumnPropNameInRow="UNIT_NAME" msprop:Generator_ColumnVarNameInTable="columnUNIT_NAME" msprop:Generator_ColumnPropNameInTable="UNIT_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SIZE_NAME" msprop:Generator_UserColumnName="SIZE_NAME" msprop:Generator_ColumnPropNameInRow="SIZE_NAME" msprop:Generator_ColumnVarNameInTable="columnSIZE_NAME" msprop:Generator_ColumnPropNameInTable="SIZE_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="STYLE_NAME" msprop:Generator_UserColumnName="STYLE_NAME" msprop:Generator_ColumnPropNameInRow="STYLE_NAME" msprop:Generator_ColumnVarNameInTable="columnSTYLE_NAME" msprop:Generator_ColumnPropNameInTable="STYLE_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PRODUCT_CODE" msprop:Generator_UserColumnName="PRODUCT_CODE" msprop:Generator_ColumnVarNameInTable="columnPRODUCT_CODE" msprop:Generator_ColumnPropNameInRow="PRODUCT_CODE" msprop:Generator_ColumnPropNameInTable="PRODUCT_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COLOR_NAME" msprop:Generator_UserColumnName="COLOR_NAME" msprop:Generator_ColumnPropNameInRow="COLOR_NAME" msprop:Generator_ColumnVarNameInTable="columnCOLOR_NAME" msprop:Generator_ColumnPropNameInTable="COLOR_NAMEColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

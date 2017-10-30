@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[DBUtility.csproj]
+SCC_Aux_Path = "\\czzd-newserver\scm"
+SCC_Project_Name = "$/POS/src/POS/DBUtility", ASBAAAAA

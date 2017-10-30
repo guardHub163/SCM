@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AJAXMasterPage.master.cs"
+    Inherits="SCM.Web.AJAXMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link href="Css/CommonStyle.css" type="text/css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="headPlace" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="margin: 0px;">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" />
+    <asp:ContentPlaceHolder ID="bodyPlace" runat="server">
+    </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
+
+<script language="javascript" type="text/javascript">   
+<!-- 
+    Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+    function EndRequestHandler(sender, args){
+        if (args.get_error() != undefined) 
+        { 
+            alert(args.get_error().message.substring(52));
+        }
+        args.set_errorHandled(true);
+        try{
+            processEndRequestHandler(sender,args);
+        }catch(e){}
+    }   
+    -->
+</script>
+

@@ -1,0 +1,156 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1455E68D-F606-4480-9C83-FFC0027FBDEB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OutLookPanl</RootNamespace>
+    <AssemblyName>OutLookPanl</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MTSplitter\MTSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Panl\Design\NavigateBarActionList.cs" />
+    <Compile Include="Panl\Design\NavigateBarDesigner.cs" />
+    <Compile Include="Panl\NavigateBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Panl\NavigateBarButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panl\NavigateBarButtonCancelEventArgs.cs" />
+    <Compile Include="Panl\NavigateBarButtonCollection.cs" />
+    <Compile Include="Panl\NavigateBarButtonEventArgs.cs" />
+    <Compile Include="Panl\NavigateBarCaption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panl\NavigateBarCaptionDescription.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panl\NavigateBarCollapseButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panl\NavigateBarCollapsibleScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panl\NavigateBarCollapsibleText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panl\NavigateBarColorTable.cs" />
+    <Compile Include="Panl\NavigateBarHelper.cs" />
+    <Compile Include="Panl\NavigateBarOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panl\NavigateBarOptions.designer.cs">
+      <DependentUpon>NavigateBarOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panl\NavigateBarOverFlowPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panl\NavigateBarOverFlowPanelButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panl\NavigateBarOverFlowPanelMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Panl\NavigateBarRelatedControlPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panl\NavigateBarRenderer.cs" />
+    <Compile Include="Panl\NavigateBarSettings.cs" />
+    <Compile Include="Panl\NavigateBarSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Panl\NavigateBarOptions.resx">
+      <DependentUpon>NavigateBarOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowDown.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowUp.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NavigateBar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoImage.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

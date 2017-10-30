@@ -1,0 +1,428 @@
+body
+{
+	margin: 0px;
+	font-family:Verdana, Arial, Helv, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.navigation
+{
+	width: 100%;
+	height: 30px;
+	background-image: url(../Images/navigation.png);
+	background-repeat: no-repeat;
+	font-weight: bold;
+	color: White;
+	padding-left: 5px;
+}
+.navigationChild
+{
+	width: 100%;
+	height: 30px;
+	background-image: url(../Images/navigation.png);
+	background-repeat: no-repeat;
+	font-weight: bold;
+	color: White;
+	padding-left: 5px;
+}
+
+/****************************** TABLE START ***********************************************/
+.border_div
+{
+	margin: 2px;
+	border: solid 1px green;
+	width: 1005px;
+	padding-bottom: 3px;
+}
+.operateTable
+{
+	margin-top: 3px;
+	margin-left: 3px;
+	text-align: right;
+	width: 405px;
+}
+
+.inputTable
+{
+	margin-top: 3px;
+	margin-left: 3px;
+	border-top: solid 1px Green;
+	border-left: solid 1px Green;
+	table-layout: fixed;
+	padding: 0px;
+}
+
+.searchTable
+{
+	margin-top: 3px;
+	margin-left: 3px;
+	text-align: right;
+	width: 998px;
+}
+.lineTitleTable
+{
+	margin-top: 3px;
+	margin-left: 3px;
+	height: 20px;
+	width: 150px;
+	color: White;
+	background-image: url(../Images/navigation_2.png);
+	border: solid 1px green;
+	table-layout: fixed;
+}
+.gridHaderTable
+{
+	width: 998px;
+	border: 1px solid green;
+	margin-top: 3px;
+	margin-left: 3px;
+}
+.tdTitle
+{
+	width: 140px;
+	height: 25px;
+	padding-left: 5px;
+	vertical-align: middle;
+	background-color: #DAE6F4;
+	border-bottom: solid 1px Green;
+	border-right: solid 1px Green;
+}
+
+.textupdate
+{
+	border-top: solid 1px Green;
+	border-right: solid 1px Green;
+	border-left: solid 1px Green;
+	background-color: #BCD1E8;
+	width: 177px;
+	height: 25px;
+}
+.textupdate1
+{
+	border-bottom: solid 1px Green;
+	border-right: solid 1px Green;
+	border-left: solid 1px Green;
+	border-top: solid 1px Green;
+	background-color: #BCD1E8;
+	width: 177px;
+	height: 25px;
+}
+
+.tdText
+{
+	width: 347px;
+	height: 25px;
+	padding-left: 5px;
+	vertical-align: middle;
+	background-color: #F4F8FC;
+	border-bottom: solid 1px Green;
+	border-right: solid 1px Green;
+}
+
+
+.tdTitle_2
+{
+	width: 100px;
+	height: 25px;
+	padding-left: 5px;
+	vertical-align: middle;
+	background-color: #DAE6F4;
+	border-bottom: solid 1px Green;
+	border-right: solid 1px Green;
+}
+.tdText_2
+{
+	width: 220px;
+	height: 25px;
+	padding-left: 5px;
+	vertical-align: middle;
+	background-color: #F4F8FC;
+	border-bottom: solid 1px Green;
+	border-right: solid 1px Green;
+}
+
+.tdTitle_3
+{
+	width: 100px;
+	height: 25px;
+	padding-left: 5px;
+	vertical-align: middle;
+	background-color: #DAE6F4;
+	border-bottom: solid 1px Green;
+	border-right: solid 1px Green;
+}
+.tdText_3
+{
+	width: 290px;
+	height: 25px;
+	padding-left: 5px;
+	vertical-align: middle;
+	background-color: #F4F8FC;
+	border-bottom: solid 1px Green;
+	border-right: solid 1px Green;
+}
+
+
+.headerRight
+{
+	padding-right: 2px;
+	text-align: right;
+}
+
+.cellRight
+{
+	padding-right: 2px;
+	text-align: right;
+}
+.inputImg
+{
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+.img
+{
+	cursor: pointer;
+	width: 16px;
+	height: 20px;
+	vertical-align: middle;
+}
+.inputText
+{
+	height: 18px;
+	padding: 0px;
+	vertical-align: middle;
+}
+.label
+{
+	vertical-align: middle;
+}
+/****************************** TABLE END ***********************************************/
+
+/****************************** GRID_VIEW START ***********************************************/
+
+.GridView
+{
+	margin-top: 3px;
+	margin-left: 3px;
+	margin-right: 3px;
+	width: 998px;
+	border: solid 1px Green;
+}
+.GridView td, th
+{
+	border-collapse: collapse;
+	border: solid 1px Green;
+}
+.ScrollGridView
+{
+	table-layout: fixed;
+	margin: 0px;
+	border: 0px;
+}
+
+.ScrollGridView td, th
+{
+	padding: 0px;
+	border-top: solid 0px Green;
+	border-bottom: solid 1px Green;
+	border-left: solid 0px Green;
+	border-right: solid 1px Green;
+}
+
+.ScrollGridViewHeader
+{
+	background-image: url(../Images/GridViewHeader.png);
+	background-repeat: inherit;
+	line-height: 25px;
+	height: 25px;
+}
+
+.GridViewHeader
+{
+	background-image: url(../Images/GridViewHeader.png);
+	background-repeat: inherit;
+	line-height: 25px;
+	height: 25px;
+	padding-right: 2px;
+	padding-left: 2px;
+}
+.RowStyle
+{
+	line-height: 20px;
+	height: 20px;
+}
+.ScrollPanel
+{
+	margin-left: 3px;
+	padding: 0px;
+	border: solid 1px Green;
+	border-top: solid 0px Green;
+}
+.ScrollPanel1
+{
+	margin-left: 3px;
+	padding: 0px;
+	border: solid 1px Green;
+	border-top: solid 0px Green;
+	margin-top:0px;
+}
+/*********************************GRID_VIEW END ********************************************/
+
+/*********************************分页标签 START ************************************************/
+.panelPage
+{
+	margin-top: 5px;
+	margin-left: 5px;
+}
+/********************************分页标签　END **************************************************/
+
+/*************************************/
+.GridViewLinkButton
+{
+	line-height: 16px;
+	height: 16px;
+	width: 40px;
+	margin-top: 1px;
+	padding-top: 1px;
+	padding-left: 2px;
+	background-image: url(                                      '../Images/parentMenu.png' );
+	background-repeat: inherit;
+	border: 1px solid;
+	color: Green;
+	text-align: center;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+
+.LinkButton
+{
+	display: inline-block;
+	line-height: 16px;
+	height: 16px;
+	width: 50px;
+	padding-top: 1px;
+	background-image: url(                                      '../Images/parentMenu.png' );
+	background-repeat: inherit;
+	border: 1px solid;
+	color: Green;
+	text-align: center;
+	vertical-align: bottom;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+
+.LinkButton2
+{
+	display: inline-block;
+	line-height: 20px;
+	height: 20px;
+	width: 50px;
+	background-image: url(                                      '../Images/parentMenu.png' );
+	background-repeat: inherit;
+	border: 1px solid;
+	color: Green;
+	text-align: center;
+	vertical-align: bottom;
+	letter-spacing: 3px;
+	text-decoration: none;
+}
+
+.LinkButton3
+{
+	display: inline-block;
+	line-height: 20px;
+	height: 20px;
+	width: 80px;
+	background-image: url(                                      '../Images/parentMenu.png' );
+	background-repeat: inherit;
+	border: 1px solid;
+	color: Green;
+	text-align: center;
+	vertical-align: bottom;
+	letter-spacing: 3px;
+	text-decoration: none;
+}
+
+a:link
+{
+	text-decoration: none;
+	color: Green;
+}
+a:visited
+{
+	text-decoration: none;
+	color: Green;
+}
+a:hover
+{
+	text-decoration: none;
+	color: red;
+	border-color: Green;
+}
+a:actived
+{
+	text-decoration: none;
+	color: Green;
+}
+/***************************/
+.textRight
+{
+	padding-right: 2px;
+	text-align: right;
+}
+.gridTextRight
+{
+	background-color: #FFFFCC;
+	line-height: 12px;
+	padding-right: 2px;
+	text-align: right;
+}
+/***************************************/
+.imgList
+{
+	width: 802px;
+	height: 102px;
+	border: 1px solid Green;
+	background-color: #FFFFCC;
+	overflow-x: scroll;
+	overflow-y: hidden; /*scrollbar-face-color: #CBDDF1; 	scrollbar-highlight-color: #547CBB; 	scrollbar-shadow-color: #547CBB; 	scrollbar-3dlight-color: #ffffff; 	scrollbar-arrow-color: #547CBB; 	scrollbar-track-color: #FFFFFF; 	scrollbar-darkshadow-color: #FFFFFF;*/
+	scrollbar-face-color: #F4F8FC; /* 滑块 */
+	scrollbar-hightlight-color: Green; /* 高亮 */
+	scrollbar-3dlight-color: Green; /* 3维光线 */
+	scrollbar-darkshadow-color: #FFFFCC; /* 暗影    */
+	scrollbar-shadow-color: Green; /* 阴影   */
+	scrollbar-arrow-color: Green; /* 箭头 */
+	scrollbar-track-color: #DAE6F4; /* 滑道颜色 */
+	scrollbar-base-color: #DAE6F4; /* 主要颜色 */
+}
+.imgList ul
+{
+	padding: 0px;
+	border: 1px yelloy solid;
+	height: 80px;
+	margin: 2px;
+}
+.imgList ul li
+{
+	float: left;
+	padding-right: 2px;
+	list-style-type: none;
+}
+.smallPhoto
+{
+	width: 80px;
+	height: 80px;
+	border: 0px;
+	cursor: pointer;
+}
+
+.Scroll
+{
+	/*border: 1px solid Green; 	background-color: #FFFFCC;*/ /*overflow-x: scroll;overflow-y: hidden; scrollbar-face-color: #CBDDF1; 	scrollbar-highlight-color: #547CBB; 	scrollbar-shadow-color: #547CBB; 	scrollbar-3dlight-color: #ffffff; 	scrollbar-arrow-color: #547CBB; 	scrollbar-track-color: #FFFFFF; 	scrollbar-darkshadow-color: #FFFFFF;*/ /*scrollbar-face-color: #FEDCCO;*/ /* 滑块 */
+	scrollbar-hightlight-color: Green; /* 高亮 */ /*scrollbar-3dlight-color: #FEDCC0;*/ /* 3维光线 */
+	scrollbar-darkshadow-color: Green; /* 暗影    */ /*scrollbar-shadow-color: #D96404;*/ /* 阴影   */
+	scrollbar-arrow-color: Black; /* 箭头 */
+	scrollbar-track-color: #C5F3D1; /* 滑道颜色 */
+	scrollbar-base-color: #339966 /* 主要颜色 */;
+}

@@ -1,0 +1,333 @@
+﻿body
+{
+	margin: 0px;
+	font-size: 14px;
+}
+.Sarnavigation
+{
+	margin-top: 5px; /*text-align:center;*/
+	width: 1024px;
+	height: 30px;
+	font-weight: bold;
+	color: White;
+	font-size: 16px;
+}
+.Sarnavigation1
+{
+	margin-top: 5px;
+	text-align: center;
+	width: 1020px;
+	height: 30px;
+	text-align: left;
+	background-color: #F4F8FC;
+	background-repeat: no-repeat;
+	font-weight: bold;
+	color: Black;
+	font-size: 16px;
+	border-top: solid 1px #D2D2D2;
+	border-bottom: solid 1px #D2D2D2;
+}
+
+.inputSarTable
+{
+	border: solid 1px Gray;
+	width: 100%;
+}
+
+.inputSarTable1
+{
+	margin-top: 3px;
+	margin-left: 4px;
+	border-top: solid 1px Gray;
+	border-left: solid 1px Gray;
+	table-layout: fixed;
+	padding: 0px;
+}
+.tdSarTiTle
+{
+	width: 160px;
+	height: 40px;
+	padding-left: 5px;
+	vertical-align: middle;
+	background-color: #DAE6F4;
+	font-size: 14px;
+	text-align: left;
+	border-bottom: solid 1px Gray;
+	border-right: solid 1px Gray;
+}
+
+
+.tdSarTiTle1
+{
+	width: 150px;
+	height: 32.5px;
+	padding-left: 5px;
+	vertical-align: middle;
+	font-size: 14px;
+	text-align: left;
+	border-bottom: solid 1px Gray;
+	border-right: solid 1px Gray;
+	background-color: #D9EEF9;
+}
+.tdSarText1
+{
+	width: 335px;
+	height: 25px;
+	padding-left: 5px;
+	vertical-align: middle;
+	text-align: left;
+	border-bottom: solid 1px Gray;
+	border-right: solid 1px Gray;
+	background-color: #EFFBFE;
+}
+.tdSarText2
+{
+	width: 842px;
+	height: 25px;
+	padding-left: 5px;
+	vertical-align: middle;
+	background-color: #e6e6e6;
+	text-align: left;
+	border-bottom: solid 1px Gray;
+	border-right: solid 1px Gray;
+}
+
+
+.tdSarTiTle2
+{
+	width: 160px;
+	height: 40px;
+	padding-left: 5px;
+	vertical-align: middle;
+	background-color: #121212;
+	color: White;
+	font-size: 14px;
+	text-align: left;
+	border-bottom: solid 1px Gray;
+	border-right: solid 1px Gray;
+}
+
+
+.tdSarText
+{
+	background-color: #DAE6F4;
+	text-align: center;
+}
+.inputText
+{
+	height: 18px;
+	padding: 0px;
+	vertical-align: middle;
+}
+
+.label
+{
+	vertical-align: middle;
+}
+
+.LinkButton2
+{
+	display: inline-block;
+	line-height: 35px;
+	height: 35px;
+	width: 90px;
+	background-image: url(                                            '../Images/btnA.png' );
+	background-repeat: no-repeat;
+	color: Black;
+	text-align: center;
+	vertical-align: bottom;
+	letter-spacing: 3px;
+	text-decoration: none;
+}
+
+.LinkButton3
+{
+	display: inline-block;
+	line-height: 20px;
+	height: 20px;
+	width: 79px;
+	background-image: url(       '../Images/parentMenu.png' );
+	background-repeat: inherit;
+	border: 1px solid #D2D2D2;
+	color: Black;
+	text-align: center;
+	vertical-align: bottom;
+	letter-spacing: 3px;
+	text-decoration: none;
+}
+
+.inputImg
+{
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+.img
+{
+	cursor: pointer;
+	width: 16px;
+	height: 20px;
+	vertical-align: middle;
+}
+
+.searchTable
+{
+	margin-top: 3px;
+	margin-left: 3px;
+	text-align: right;
+	width: 998px;
+}
+.divStyle
+{
+	width: 1020px; /*background-image: url(../Images/sar_body_top.jpg); 	background-repeat: repeat-x; 	border-bottom: solid 1px #D2D2D2; 	border-left: solid 1px #D2D2D2; 	border-right: solid 1px #D2D2D2;*/
+}
+
+.JsTabRow
+{
+	/*background-color: Green; 	color:Green;*/
+	border-bottom: solid 1px Gray;
+}
+
+.JsTabRows
+{
+	border-bottom: solid 1px Gray;
+	border-top: solid 0px Gray;
+}
+
+
+.CGridView
+{
+	margin-top: 0px; /*margin-left: 3px; 	margin-right: 3px;border: solid 1px #87CEEB;*/
+	width: 1000px;
+	table-layout: fixed;
+	border: 0px;
+	font-size: 14px;
+}
+.CGridView tr td
+{
+	height: 23px;
+	border: 0px;
+	border-bottom: solid 1px #87CEEB;
+}
+.CGridView a
+{
+	color: blue;
+	text-decoration: none;
+	background-repeat: no-repeat;
+}
+
+.GridView
+{
+	margin-top: 0px; /*margin-left: 3px; 	margin-right: 3px;border: solid 1px #87CEEB;*/
+	width: 1000px;
+	table-layout: fixed;
+	border: 1px;
+	font-size: 14px;
+}
+
+.GridView th
+{
+	background-image: url(../Images/tableTop.png); 
+	background-repeat: repeat-x;
+	height: 30px;
+	font-size: 15px;
+	border: 1px;
+}
+
+.GridView tr td
+{
+	height: 23px;
+	border: 1px;
+	border-bottom: solid 1px #87CEEB;
+}
+.GridView a
+{
+	color: blue;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	border: 1px;
+}
+
+/*****************************************MiddleTable start*****************************************/
+.MiddleTable
+{
+	height: 35px;
+	background-image: url(../Images/topline.png);
+	background-repeat: repeat-x;
+}
+.MiddleTable tr td
+{
+	text-align: center;
+}
+
+.MiddleTable a
+{
+	display: inline-block;
+	line-height: 35px;
+	height: 35px;
+	width: 120px;
+	vertical-align: bottom;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: Transparent;
+}
+.MiddleTable a:link, a:visited
+{
+	text-decoration: none;
+	color: White;
+}
+.MiddleTable a:hover
+{
+	text-decoration: none;
+	color: Red;
+}
+.MiddleTable a:active
+{
+	text-decoration: none;
+}
+
+.Guang
+{
+	height: 90px;
+	width: 190px;
+	line-height: 90px;
+	display: inline-block;
+}
+
+.Td1 a
+{
+	height: 90px;
+	width: 190px;
+	line-height: 90px;
+	display: inline-block;
+	background-image: url(../Images/Down1z.gif);
+	background-repeat: no-repeat;
+}
+
+.Td1 a:link, a:visited
+{
+	text-decoration: none;
+}
+.Td1 a:hover
+{
+	text-decoration: none;
+	background-image: url(../Images/Down1s.gif);
+	background-repeat: no-repeat;
+}
+.Td1 a:active
+{
+	text-decoration: none;
+}
+
+.Guang
+{
+	height: 90px;
+	width: 190px;
+	line-height: 90px;
+	display: inline-block;
+}
+
+/*******************************************MiddleTable end***********************************************/

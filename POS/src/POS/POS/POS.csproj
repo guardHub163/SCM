@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D3C04BF3-CEAD-4B17-AF97-8E3B315794B6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POS</RootNamespace>
+    <AssemblyName>POS</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>POS.Program</StartupObject>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastReport, Version=1.2.76.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars, Version=1.2.76.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Editor, Version=1.2.76.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\FastReport.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAddVipInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddVipInfo.Designer.cs">
+      <DependentUpon>FrmAddVipInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCashDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCashDetail.Designer.cs">
+      <DependentUpon>FrmCashDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCash.Designer.cs">
+      <DependentUpon>FrmCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCashModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCashModify.Designer.cs">
+      <DependentUpon>FrmCashModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrinterSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrinterSet.Designer.cs">
+      <DependentUpon>FrmPrinterSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPay.designer.cs">
+      <DependentUpon>FrmPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlanPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlanPay.Designer.cs">
+      <DependentUpon>FrmPlanPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrice.Designer.cs">
+      <DependentUpon>FrmPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProduct.designer.cs">
+      <DependentUpon>FrmProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSales.designer.cs">
+      <DependentUpon>FrmSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalesModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalesModify.Designer.cs">
+      <DependentUpon>FrmSalesModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalesPlanPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalesPlanPay.Designer.cs">
+      <DependentUpon>FrmSalesPlanPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalesPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalesPlan.Designer.cs">
+      <DependentUpon>FrmSalesPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalesSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalesSearch.Designer.cs">
+      <DependentUpon>FrmSalesSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalesShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalesShow.Designer.cs">
+      <DependentUpon>FrmSalesShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalesStat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalesStat.Designer.cs">
+      <DependentUpon>FrmSalesStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSuspendList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSuspendList.Designer.cs">
+      <DependentUpon>FrmSuspendList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDownload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDownload.Designer.cs">
+      <DependentUpon>FrmDownload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpload.Designer.cs">
+      <DependentUpon>FrmUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVipModity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVipModity.Designer.cs">
+      <DependentUpon>FrmVipModity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVipSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVipSearch.Designer.cs">
+      <DependentUpon>FrmVipSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVipShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVipShow.Designer.cs">
+      <DependentUpon>FrmVipShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyDataGrid .cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyDataGrid .Designer.cs">
+      <DependentUpon>MyDataGrid .cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyTextBox.Designer.cs">
+      <DependentUpon>MyTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintInvoice.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAddVipInfo.resx">
+      <DependentUpon>FrmAddVipInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCashDetail.resx">
+      <DependentUpon>FrmCashDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCash.resx">
+      <DependentUpon>FrmCash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCashModify.resx">
+      <DependentUpon>FrmCashModify.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPay.resx">
+      <DependentUpon>FrmPay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlanPay.resx">
+      <DependentUpon>FrmPlanPay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrice.resx">
+      <DependentUpon>FrmPrice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrinterSet.resx">
+      <DependentUpon>FrmPrinterSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProduct.resx">
+      <DependentUpon>FrmProduct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSales.resx">
+      <DependentUpon>FrmSales.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalesModify.resx">
+      <DependentUpon>FrmSalesModify.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalesPlanPay.resx">
+      <DependentUpon>FrmSalesPlanPay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalesPlan.resx">
+      <DependentUpon>FrmSalesPlan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalesSearch.resx">
+      <DependentUpon>FrmSalesSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalesShow.resx">
+      <DependentUpon>FrmSalesShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalesStat.resx">
+      <DependentUpon>FrmSalesStat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSuspendList.resx">
+      <DependentUpon>FrmSuspendList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDownload.resx">
+      <DependentUpon>FrmDownload.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpload.resx">
+      <DependentUpon>FrmUpload.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVipModity.resx">
+      <DependentUpon>FrmVipModity.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVipSearch.resx">
+      <DependentUpon>FrmVipSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVipShow.resx">
+      <DependentUpon>FrmVipShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RegisterKey.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Web References\CZZD.SCM\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WebServieceOperate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景图片.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\边框.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{38D7AA58-C95B-449B-86C6-A8073A56E11F}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{E3D8759A-C5EB-402D-9F10-F5C6029A8D1A}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\IDAL.csproj">
+      <Project>{B0706FA2-977C-4523-B093-F57804756498}</Project>
+      <Name>IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLServerDAL\SQLServerDAL.csproj">
+      <Project>{AB835BA2-FFD6-49CD-87B0-E216255BB32E}</Project>
+      <Name>SQLServerDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserDataCache\UserCache.csproj">
+      <Project>{20BBBBD8-5384-492D-82B8-4866FD2C45BF}</Project>
+      <Name>UserCache</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash.png" />
+    <None Include="Resources\button_1.png" />
+    <None Include="Resources\button_2.png" />
+    <None Include="Resources\button_1_selected.png" />
+    <None Include="Resources\button_3.png" />
+    <None Include="Resources\button_4.png" />
+    <None Include="Resources\1.png" />
+    <Content Include="Resources\checkmark.png" />
+    <Content Include="Resources\checkmark2.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\footer.png" />
+    <None Include="Resources\top.png" />
+    <None Include="Resources\top_1.png" />
+    <None Include="Resources\userInfo.png" />
+    <None Include="Resources\nav.png" />
+    <None Include="Resources\top_2.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\price.png" />
+    <None Include="Resources\color.jpg" />
+    <None Include="Resources\size.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\upload.png" />
+    <None Include="Resources\Sales Statistics.png" />
+    <None Include="Resources\userInfo_2.png" />
+    <None Include="Resources\customerInfo.png" />
+    <None Include="Resources\productGroup.png" />
+    <None Include="Resources\productUnit.png" />
+    <None Include="Resources\productInfo.png" />
+    <None Include="Resources\downloadAll.png" />
+    <None Include="Resources\productColor.png" />
+    <None Include="Resources\productStyle.png" />
+    <None Include="Resources\Prom.png" />
+    <None Include="Resources\Prom1.png" />
+    <None Include="Resources\points.png" />
+    <None Include="Resources\points1.png" />
+    <Content Include="Resources\商品浏览.png" />
+    <None Include="Resources\客户管理.png" />
+    <Content Include="Resources\销售管理.png" />
+    <None Include="Resources\销售预定.png" />
+    <None Include="Web References\CZZD.SCM\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\CZZD.SCM\Webservice.disco" />
+    <None Include="Web References\CZZD.SCM\Webservice.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:60631/SCM/Webservice.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CZZD.SCM\</RelPath>
+      <UpdateFromURL>http://localhost:60631/SCM/Webservice.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>POS_CZZD_SCM_WebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

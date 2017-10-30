@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<updateFiles>
+       <file path="AutoUpdater.dll"  url="http://112.82.245.2:8080/scm-low/update/dll/AutoUpdater.zip" lastver="1.0.0.0" size="69" needRestart="true"/>
+       <file path="FastReport.Bars.dll"  url="http://112.82.245.2:8080/scm-low/update/dll/FastReport.Bars.zip" lastver="1.0.0.0" size="3320" needRestart="true"/>
+       <file path="FastReport.dll"  url="http://112.82.245.2:8080/scm-low/update/dll/FastReport.zip" lastver="1.0.0.0" size="2925" needRestart="true"/>
+       <file path="FastReport.Editor.dll"  url="http://112.82.245.2:8080/scm-low/update/dll/FastReport.Editor.zip" lastver="1.0.0.0" size="984" needRestart="true"/>
+       <file path="MySql.Data.dll"  url="http://112.82.245.2:8080/scm-low/update/dll/MySql.Data.zip" lastver="1.0.0.0" size="361" needRestart="true"/>
+       <file path="POS.BLL.dll"  url="http://112.82.245.2:8080/scm-low/update/dll/POS.BLL.zip" lastver="1.0.0.0" size="24" needRestart="true"/>
+       <file path="POS.Common.dll"  url="http://112.82.245.2:8080/scm-low/update/dll/POS.Common.zip" lastver="1.0.0.0" size="28" needRestart="true"/>
+       <file path="POS.DALFactory.dll"  url="http://112.82.245.2:8080/scm-low/update/dll/POS.DALFactory.zip" lastver="1.0.0.0" size="16" needRestart="true"/>
+       <file path="POS.DBUtility.dll"  url="http://112.82.245.2:8080/scm-low/update/dll/POS.DBUtility.zip" lastver="1.0.0.0" size="32" needRestart="true"/>
+       <file path="POS.IDAL.dll"  url="http://112.82.245.2:8080/scm-low/update/dll/POS.IDAL.zip" lastver="1.0.0.0" size="20" needRestart="true"/>
+       <file path="POS.Model.dll"  url="http://112.82.245.2:8080/scm-low/update/dll/POS.Model.zip" lastver="1.0.0.0" size="48" needRestart="true"/>
+       <file path="POS.SQLServerDAL.dll"  url="http://112.82.245.2:8080/scm-low/update/dll/POS.SQLServerDAL.dll" lastver="1.0.0.0" size="120" needRestart="true"/>
+        <file path="System.Data.SQLite.dll"  url="http://112.82.245.2:8080/scm-low/update/dll/System.Data.SQLite.zip" lastver="1.0.0.0" size="828" needRestart="true"/>
+       <file path="UserDataCache.dll"  url="http://112.82.245.2:8080/scm-low/update/dll/UserDataCache.zip" lastver="1.0.0.0" size="7" needRestart="true"/>
+       <file path="POS.exe.config"  url="http://112.82.245.2:8080/scm-low/update/dll/POS.exe.config" lastver="1.0.0.0" size="2" needRestart="true"/>
+       <file path="POS.exe"  url="http://112.82.245.2:8080/scm-low/update/dll/POS..zip" lastver="1.0.0.0" size="11599" needRestart="true"/>   
+ </updateFiles>
